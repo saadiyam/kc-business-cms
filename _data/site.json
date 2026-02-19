@@ -1,15 +1,21 @@
 {
   "site": {
     "name": "KC Services",
-    "tagline": "Financial Clarity for Growing Businesses",
-    "description": "Expert bookkeeping and financial management services that give you the freedom to focus on what you do best – running your business.",
-    "email": "info@kcbusiness.net",
-    "phone": "341-758-0506",
-    "location": "San Jose, CA",
+    "tagline": "Financial Clarity for Small Businesses",
+    "description": "Expert bookkeeping and financial management services that give you the freedom to focus on what you do best running your business.",
+    "email": "hi@kcbusiness.net",
+    "phone": "123-234-344",
+    "location": "Dubai",
     "instagram": "#",
     "stats": [
-      { "number": "10+", "label": "Years Experience" },
-      { "number": "98%", "label": "Client Retention" }
+      {
+        "number": "15+",
+        "label": "Projects"
+      },
+      {
+        "number": "100%",
+        "label": "Client Retention"
+      }
     ]
   },
   "services": [
@@ -43,17 +49,32 @@
     {
       "type": "Package",
       "subtitle": "Day-to-day availability or long-term without breaking the bank.",
-      "features": ["Customized service bundles", "Predictable monthly costs", "Priority support", "Regular progress reports"]
+      "features": [
+        "Customized service bundles",
+        "Predictable monthly costs",
+        "Priority support",
+        "Regular progress reports"
+      ]
     },
     {
       "type": "Hourly",
       "subtitle": "For needs that aren't day-to-day — a project here and there.",
-      "features": ["Pay only for time used", "Flexible scheduling", "Project-based work", "No long-term commitment"]
+      "features": [
+        "Pay only for time used",
+        "Flexible scheduling",
+        "Project-based work",
+        "No long-term commitment"
+      ]
     },
     {
       "type": "Flat Rate",
       "subtitle": "One-time project or hands-on help for a few tasks this month.",
-      "features": ["One-time projects", "Clear upfront pricing", "Defined deliverables", "Quick turnaround"]
+      "features": [
+        "One-time projects",
+        "Clear upfront pricing",
+        "Defined deliverables",
+        "Quick turnaround"
+      ]
     }
   ],
   "testimonials": [
