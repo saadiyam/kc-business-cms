@@ -4,17 +4,17 @@
     "tagline": "Financial Clarity for Small Businesses",
     "description": "Expert bookkeeping and financial management services that give you the freedom to focus on what you do best running your business.",
     "email": "hi@kcbusiness.net",
-    "phone": "123-234-344",
-    "location": "Dubai",
+    "phone": "123-456-789",
+    "location": "UAE",
     "instagram": "#",
     "stats": [
       {
-        "number": "15+",
+        "number": "5+",
         "label": "Projects"
       },
       {
         "number": "100%",
-        "label": "Client Retention"
+        "label": "Satisfaction"
       }
     ]
   },
@@ -47,7 +47,7 @@
   ],
   "pricing": [
     {
-      "type": "Package",
+      "type": "First Package",
       "subtitle": "Day-to-day availability or long-term without breaking the bank.",
       "features": [
         "Customized service bundles",
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "type": "Hourly",
+      "type": "Second Hourly",
       "subtitle": "For needs that aren't day-to-day — a project here and there.",
       "features": [
         "Pay only for time used",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "type": "Flat Rate",
+      "type": "Third Flat Rate",
       "subtitle": "One-time project or hands-on help for a few tasks this month.",
       "features": [
         "One-time projects",
@@ -83,7 +83,7 @@
       "author": "Amanda P."
     },
     {
-      "text": "She's extremely knowledgeable and doesn't make you feel inferior with your questions. I got a sense that she genuinely cared about the wellbeing of my business which is rare to find.",
+      "text": "Amazing",
       "author": "Evelyn L."
     },
     {
