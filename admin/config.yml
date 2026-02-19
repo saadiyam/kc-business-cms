@@ -1,0 +1,68 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Allows editorial workflow (draft → review → publish)
+publish_mode: editorial_workflow
+
+# Where uploaded images get stored
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+
+  # ── SITE SETTINGS ──────────────────────────────────────
+  - name: "settings"
+    label: "⚙️ Site Settings"
+    files:
+
+      - name: "general"
+        label: "General Info"
+        file: "_data/site.json"
+        fields:
+          - label: "Site Info"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Business Name", name: "name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Hero Description", name: "description", widget: "text" }
+              - { label: "Email Address", name: "email", widget: "string" }
+              - { label: "Phone Number", name: "phone", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Instagram URL", name: "instagram", widget: "string" }
+              - label: "Stats (shown on hero)"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Number (e.g. 10+)", name: "number", widget: "string" }
+                  - { label: "Label (e.g. Years Experience)", name: "label", widget: "string" }
+
+          # ── SERVICES ──────────────────────────────────
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Service Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          # ── PRICING ───────────────────────────────────
+          - label: "Pricing Plans"
+            name: "pricing"
+            widget: "list"
+            fields:
+              - { label: "Plan Name (e.g. Package)", name: "type", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: { label: "Feature", name: "item", widget: "string" }
+
+          # ── TESTIMONIALS ──────────────────────────────
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Client Quote", name: "text", widget: "text" }
+              - { label: "Client Name (e.g. Amanda P.)", name: "author", widget: "string" }

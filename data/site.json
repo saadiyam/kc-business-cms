@@ -1,0 +1,73 @@
+{
+  "site": {
+    "name": "KC Services",
+    "tagline": "Financial Clarity for Growing Businesses",
+    "description": "Expert bookkeeping and financial management services that give you the freedom to focus on what you do best – running your business.",
+    "email": "info@kcbusiness.net",
+    "phone": "341-758-0506",
+    "location": "San Jose, CA",
+    "instagram": "#",
+    "stats": [
+      { "number": "10+", "label": "Years Experience" },
+      { "number": "98%", "label": "Client Retention" }
+    ]
+  },
+  "services": [
+    {
+      "icon": "📒",
+      "title": "Ongoing Bookkeeping",
+      "description": "Regular maintenance of your financial records, ensuring accuracy and compliance throughout the year."
+    },
+    {
+      "icon": "↔️",
+      "title": "AR/AP Management",
+      "description": "Complete accounts receivable and payable management to maintain healthy cash flow and vendor relationships."
+    },
+    {
+      "icon": "🧾",
+      "title": "Invoice/Bill Creation",
+      "description": "Professional invoice generation and bill processing to streamline your payment cycles."
+    },
+    {
+      "icon": "🔍",
+      "title": "Accounts Reconciliation",
+      "description": "Monthly reconciliation of all accounts to catch discrepancies early and maintain accuracy."
+    },
+    {
+      "icon": "📊",
+      "title": "Financial Prep",
+      "description": "Comprehensive financial statements and reports that give you clear insights into your business health."
+    }
+  ],
+  "pricing": [
+    {
+      "type": "Package",
+      "subtitle": "Day-to-day availability or long-term without breaking the bank.",
+      "features": ["Customized service bundles", "Predictable monthly costs", "Priority support", "Regular progress reports"]
+    },
+    {
+      "type": "Hourly",
+      "subtitle": "For needs that aren't day-to-day — a project here and there.",
+      "features": ["Pay only for time used", "Flexible scheduling", "Project-based work", "No long-term commitment"]
+    },
+    {
+      "type": "Flat Rate",
+      "subtitle": "One-time project or hands-on help for a few tasks this month.",
+      "features": ["One-time projects", "Clear upfront pricing", "Defined deliverables", "Quick turnaround"]
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "Knowledgeable, professional, with a fast turnaround time. Highly recommend.",
+      "author": "Amanda P."
+    },
+    {
+      "text": "She's extremely knowledgeable and doesn't make you feel inferior with your questions. I got a sense that she genuinely cared about the wellbeing of my business which is rare to find.",
+      "author": "Evelyn L."
+    },
+    {
+      "text": "She helped us get our books in order in record time. Our cash flow clarity improved dramatically within the first month.",
+      "author": "Mike A."
+    }
+  ]
+}

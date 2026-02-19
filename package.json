@@ -1,0 +1,13 @@
+{
+  "name": "kc-services",
+  "version": "1.0.0",
+  "description": "KC Services — Financial Clarity for Growing Businesses",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "watch": "eleventy --watch"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  }
+}
