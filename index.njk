@@ -1,0 +1,188 @@
+---
+layout: base.njk
+title: Home
+---
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__bg">
+    <div class="hero__grid-lines"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+  </div>
+
+  <div class="hero__image-col">
+    <div class="hero__img-frame">
+      <img
+        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80&auto=format&fit=crop"
+        alt="Financial professional at work"
+        class="hero__img"
+        loading="eager"
+      />
+      <div class="hero__img-accent"></div>
+    </div>
+    {% for stat in site.site.stats %}
+    <div class="hero__stat-card hero__stat-card--{{ loop.index }}">
+      <span class="stat-num">{{ stat.number }}</span>
+      <span class="stat-label">{{ stat.label }}</span>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="hero__content">
+    <span class="hero__eyebrow">{{ site.site.name }}</span>
+    <h1 class="hero__title">{{ site.site.tagline }}</h1>
+    <p class="hero__sub">{{ site.site.description }}</p>
+    <div class="hero__actions">
+      <a href="#contact" class="btn btn--primary">Get Started</a>
+      <a href="#services" class="btn btn--ghost">Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about__inner">
+    <div class="about__images">
+      <div class="about__img-wrap about__img-wrap--main">
+        <img
+          src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=700&q=80&auto=format&fit=crop"
+          alt="KC Services team at work"
+          loading="lazy"
+        />
+      </div>
+      <div class="about__img-wrap about__img-wrap--secondary">
+        <img
+          src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500&q=80&auto=format&fit=crop"
+          alt="Financial planning and analysis"
+          loading="lazy"
+        />
+      </div>
+      <div class="about__img-badge">
+        <span>A Decade of</span>
+        <strong>Excellence</strong>
+      </div>
+    </div>
+
+    <div class="about__content">
+      <span class="section-label">Our Story</span>
+      <h2 class="section-title">A Decade of Empowering Small Business <em>Success</em></h2>
+      <p>KC Services began over 10 years ago with a simple mission: help small businesses thrive by taking the burden of financial management off their shoulders.</p>
+      <p>After working with businesses as an account/financial manager for a vendor, I quickly learned that many small businesses rely on friends or even themselves to handle operations and administrative tasks — often resulting in owing vendors money or falling behind on payroll.</p>
+      <p>Years of financial and administrative experience have made me very skilled at financial modeling and forecasting. Today, KC Services partners with businesses of all sizes to provide the clarity and confidence they need to make smart financial decisions.</p>
+      <div class="about__pillars">
+        <div class="pillar">
+          <span class="pillar__icon">📈</span>
+          <div><strong>Grow Your Business</strong><p>Expand confidently when your books are clear and your financials are organized.</p></div>
+        </div>
+        <div class="pillar">
+          <span class="pillar__icon">🤝</span>
+          <div><strong>Vendor &amp; Customer Relations</strong><p>We handle AR/AP so payments happen on time, every time.</p></div>
+        </div>
+        <div class="pillar">
+          <span class="pillar__icon">📋</span>
+          <div><strong>Organized Accounts</strong><p>Records, statements, expenses — managed so you can focus on running your business.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services__inner">
+    <div class="services__header">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Complete Financial <em>Solutions</em></h2>
+      <p>Tailored solutions that make a real difference for businesses like yours.</p>
+    </div>
+    <div class="services__grid">
+      {% for service in site.services %}
+      <div class="service-card" style="--i: {{ loop.index }}">
+        <span class="service-card__icon">{{ service.icon }}</span>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+        <div class="service-card__line"></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="pricing__inner">
+    <div class="pricing__header">
+      <span class="section-label">Pricing</span>
+      <h2 class="section-title">Flexible Options for <em>Every Business</em></h2>
+      <p>Every business is unique. Our consultations are free — let's find the right fit for you.</p>
+    </div>
+    <div class="pricing__grid">
+      {% for plan in site.pricing %}
+      <div class="pricing-card {% if loop.index == 2 %}pricing-card--featured{% endif %}">
+        {% if loop.index == 2 %}<span class="pricing-card__badge">Most Popular</span>{% endif %}
+        <h3 class="pricing-card__type">{{ plan.type }}</h3>
+        <p class="pricing-card__sub">{{ plan.subtitle }}</p>
+        <ul class="pricing-card__features">
+          {% for feature in plan.features %}
+          <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+        <a href="#contact" class="btn btn--outline">Get a Quote</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="testimonials__inner">
+    <span class="section-label">Client Stories</span>
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonials__grid">
+      {% for t in site.testimonials %}
+      <blockquote class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p>"{{ t.text }}"</p>
+        <cite>— {{ t.author }}</cite>
+      </blockquote>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact__inner">
+    <div class="contact__content">
+      <span class="section-label">Let's Talk</span>
+      <h2 class="section-title">Ready to Get <em>Started?</em></h2>
+      <p>Consultations are free. Tell us about your business and we'll find the right financial solution for you.</p>
+      <div class="contact__info">
+        <a href="mailto:{{ site.site.email }}" class="contact__link"><span>✉</span> {{ site.site.email }}</a>
+        <a href="tel:{{ site.site.phone }}" class="contact__link"><span>📞</span> {{ site.site.phone }}</a>
+        <span class="contact__link"><span>📍</span> {{ site.site.location }}</span>
+      </div>
+    </div>
+    <form class="contact__form" id="contactForm">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required />
+      </div>
+      <div class="form-group">
+        <label for="business">Business Name</label>
+        <input type="text" id="business" name="business" placeholder="Your Business LLC" />
+      </div>
+      <div class="form-group">
+        <label for="message">How can we help?</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us about your bookkeeping needs..."></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+    </form>
+  </div>
+</section>
